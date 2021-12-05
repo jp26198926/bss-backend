@@ -18,7 +18,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "epxress": "^0.0.1-security",
+    "express": "^0.0.1-security",
     "mongoose": "^6.0.12",
     "nodemon": "^2.0.15"
   }
