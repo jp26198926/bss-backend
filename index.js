@@ -15,7 +15,7 @@ const SettingRoutes = require('./routes/Setting');
 const KnowledgebaseRoutes = require('./routes/Knowledgebase');
 
 const app = express();
-const PORT = 8283;
+const PORT = process.env.PORT || 8283;
 dotenv.config();
 app.use(cors());
 
@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI, {
     useUnifiedTopology: true
 }).then(() => {
     //app.listen();
-    app.listen(443, () => console.log(`Server is running at port ${PORT}`));
+    app.listen(PORT, () => console.log(`Server is running at port ${PORT}`));
 }).catch((err) => {
     console.log(`Error on start ${err.stack}`);
     process.exit(1);
