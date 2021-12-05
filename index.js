@@ -23,8 +23,8 @@ mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
-    app.listen();
-    //app.listen(PORT, () => console.log(`Server is running at port ${PORT}`));
+    //app.listen();
+    app.listen(80, () => console.log(`Server is running at port ${PORT}`));
 }).catch((err) => {
     console.log(`Error on start ${err.stack}`);
     process.exit(1);
