@@ -1,7 +1,9 @@
 const router = require('express').Router();
 const bodyParser = require('body-parser');
 const Model = require('../models/SettingModel');
+const cors = require('cors');
 
+router.use(cors());
 router.use(bodyParser.json());
 
 router.get('/', (req, res) => {    
