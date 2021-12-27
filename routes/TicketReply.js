@@ -2,6 +2,9 @@ const router = require('express').Router();
 const ObjectId = require('mongoose').Types.ObjectId;
 const bodyParser = require('body-parser');
 const Model = require('../models/TicketReplyModel');
+const cors = require('cors');
+
+router.use(cors());
 
 router.use(bodyParser.json());
 

@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const bodyParser = require('body-parser');
 const Model = require('../models/RoleModel');
+const cors = require('cors');
+
+router.use(cors());
 
 router.use(bodyParser.json());
 
