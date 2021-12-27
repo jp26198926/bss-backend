@@ -26,7 +26,7 @@ router.get("/openTicket", (req, res) => {
 
     res.send({
       result: result.filter(
-        (data) => data.status.name.toLowerCase() === "open"
+        (data) => data?.status?.name?.toLowerCase() === "open"
       ),
     });
   }).populate(["category", "assignedTech", "status"]);
