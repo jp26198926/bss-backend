@@ -21,7 +21,7 @@ const Schema = mongoose.Schema({
     subject: { type: String, required: true, trim: true },
     message: { type: String, required: true, trim: true },
     assignedTech: { type: mongoose.SchemaTypes.ObjectId, ref: 'User', default: null},
-    status: { type: mongoose.SchemaTypes.ObjectId, ref: 'TicketStatus', default: "61ada32dd43e6ce8fbf08b28"}
+    status: { type: mongoose.SchemaTypes.ObjectId, ref: 'TicketStatus', default: "6194d2b3ce2dfc71dd58d3e1"}
 });
 
 const Model = mongoose.model('Ticket', Schema);
