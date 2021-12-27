@@ -15,7 +15,7 @@ const SettingRoutes = require("./routes/Setting");
 const KnowledgebaseRoutes = require("./routes/Knowledgebase");
 
 const app = express();
-const PORT = 443;
+const PORT = process.env.PORT || 8283;
 dotenv.config();
 app.use(cors());
 
